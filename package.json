@@ -1,0 +1,14 @@
+{
+  "name": "bus-reservation-mern",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && nodemon ./bin/www",
+    "client": "cd frontend && npm start"
+  }
+}
+

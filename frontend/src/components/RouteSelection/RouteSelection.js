@@ -1,5 +1,5 @@
 import React from 'react'
-import RouteSelector from '../routeSelector/Routeselector'
+import RouteSelector from '../RouteSelector/RouteSelector.js'
 import SeatSelection from '../SeatSelection/SeatSelection'
 import PaymentTab from '../PaymentTab/PaymentTab'
 

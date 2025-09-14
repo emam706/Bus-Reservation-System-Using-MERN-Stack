@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Routeselector.css'
 import * as apiCall from './routeApifunc'
-import BusList from '../BusList/BusList'
+import BusList from '../BusList/buslist'
 export default function Routeselector() {
     const [dataInp, setData] = useState("")
     const [startCity, setStartCity] = useState('')
@@ -46,16 +46,19 @@ export default function Routeselector() {
                 <form className="form-inline" onSubmit={e => getRoutes(e)}>
                     <select name="ad_account_selected" data-style="btn-new" class="selectpicker" onChange={e => { handleFromCity(e) }}>
                         <option>FROM</option>
-                        <option>Chennai</option>
-                        <option>Bangalore</option>
+                        <option>Dhaka</option>
+                        <option>Rajshahi</option>
+                        <option>Khulna</option>
+                        <option>Rangpur</option>
                     </select>
                     <select name="ad_account_selected" data-style="btn-new" class="selectpicker" onChange={e => { handleToCity(e) }}>
                         <option>TO</option>
-                        <option>Hyderabad</option>
-                        <option>Coimbatore</option>
-                        <option>Vishakapatnam</option>
-                        <option>Bangalore</option>
-                        <option>Chenai</option>
+                        <option>Dhaka</option>
+                        <option>Coxs Bazar</option>
+                        <option>Rajshahi</option>
+                        <option>Pabna</option>
+                        <option>Rangamati</option>
+                        <option>Barishal</option>
                     </select>
                     <input onChange={e => { handleDate(e) }} type="date"></input>
                     <input type="submit" className=" btn btn-primary btn-md getRoute" />
